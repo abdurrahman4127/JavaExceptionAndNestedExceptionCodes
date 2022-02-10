@@ -1,9 +1,9 @@
 package NestedExceptionCodes;
 
 //Grandparents -> Throwable
-//Uncle 1 -> Exception
+//Uncle 1 -> CustomVotingAgeException
 //Uncle 2 -> Error
-//son of uncle 1 -> Runtime Exception
+//son of uncle 1 -> Runtime CustomVotingAgeException
 
 public class NestedException_Test {
     public static void main(String[] args)

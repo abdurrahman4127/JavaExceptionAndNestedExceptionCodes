@@ -1,4 +1,4 @@
-package NestedExceptionCodes;
+package ExceptionCodes.CustomVotingAgeException;
 
 /*
 question :
@@ -8,18 +8,30 @@ if the validate(); methode receives a parameter that is less than 18.
 
  */
 
-class InvalidAgeException extends Exception {
-    InvalidAgeException(String a)
-    {
-       super(a);
+//custom exception
+class InvalidAgeException extends Exception
+{
+    public InvalidAgeException(String message) {
+        super(message);
     }
 }
 
-public class NestedException_Test7 {
+//custom exception
+class InEx extends Exception {
+    public InEx(int s) {
+        System.out.println(s*s);
+    }
+}
+
+public class CustomException {
+    public static void main(String[] args)
+    {
+        validate(13);
+    }
+
     public static void validate(int age)
     {
-        try
-        {
+        try {
             if (age < 18) {
                 throw new InvalidAgeException("Cannot vote");
             }
@@ -32,7 +44,4 @@ public class NestedException_Test7 {
         }
     }
 
-    public static void main(String[] args) {
-        validate(13);
-    }
 }

@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 /*
     Grandparents -> Throwable
-    Uncle 1 -> Exception
+    Uncle 1 -> CustomVotingAgeException
     Uncle 2 -> Error
-    Son of uncle 1 -> Runtime Exception
+    Son of uncle 1 -> Runtime CustomVotingAgeException
  */
 
 public class Exceptions {
@@ -57,11 +57,11 @@ public class Exceptions {
         }
 
         /*
-          if you don't know which exception you are expecting, use 'Exception'; it's general exception
-          don't write 'Exception' typed exception at first; otherwise only this block will be executed
-          Exception is the super class of all type of exception
+          if you don't know which exception you are expecting, use 'CustomVotingAgeException'; it's general exception
+          don't write 'CustomVotingAgeException' typed exception at first; otherwise only this block will be executed
+          CustomVotingAgeException is the super class of all type of exception
          */
-        catch (Exception b) //public class can't be named after 'Exception'
+        catch (Exception b) //public class can't be named after 'CustomVotingAgeException'
         {
             System.out.println("something's wrong. I can feel it");
         }

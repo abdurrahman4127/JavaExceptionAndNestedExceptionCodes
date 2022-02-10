@@ -15,7 +15,7 @@ public class NestedException5_3 {
                 }
 
                 catch (ArithmeticException a) {
-                    System.out.println("Arithmetic Exception caught");
+                    System.out.println("Arithmetic CustomVotingAgeException caught");
                 }
             }
         }
@@ -30,7 +30,7 @@ public class NestedException5_3 {
 
     Success
     Success
-    Arithmetic Exception caught
+    Arithmetic CustomVotingAgeException caught
     Success
     ArrayIndexOutOfBounds caught
 
